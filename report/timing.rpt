@@ -1,0 +1,50 @@
+Warning: Scenario BEST is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : surface_decoder_uf_grid
+Version: W-2024.09-SP2
+Date   : Thu Nov 12 09:42:08 2026
+****************************************
+
+  Startpoint: aresetn (input port clocked by aclk)
+  Endpoint: m_axis_tdata_reg[14] (rising edge-triggered flip-flop clocked by aclk)
+  Mode: WORST
+  Corner: WORST
+  Scenario: WORST
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock aclk (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.00      0.00
+  input external delay                             1.00      1.00 f
+  aresetn (in)                                     0.00      1.00 f
+  ctmi_468/X (SAEDLVT14_ND2_ECO_1)                 0.02      1.02 r
+  ctmi_467/X (SAEDLVT14_OR2_MM_0P5)                0.09      1.11 r
+  HFSINV_1591_225/X (SAEDLVT14_INV_S_0P5)          0.10      1.21 f
+  ctmi_531/X (SAEDLVT14_AO32_U_0P5)                0.04      1.24 f
+  ropt_h_inst_3144/X (SAEDLVT14_BUF_S_0P5)         0.01      1.25 f
+  m_axis_tdata_reg[14]/D (SAEDLVT14_FSDPQ_V2LP_0P5)
+                                                   0.00      1.25 f
+  data arrival time                                          1.25
+
+  clock aclk (rise edge)                           5.00      5.00
+  clock network delay (propagated)                 0.00      5.00
+  m_axis_tdata_reg[14]/CK (SAEDLVT14_FSDPQ_V2LP_0P5)
+                                                   0.00      5.00 r
+  clock uncertainty                               -0.20      4.80
+  library setup time                              -0.02      4.78
+  data required time                                         4.78
+  ------------------------------------------------------------------------
+  data required time                                         4.78
+  data arrival time                                         -1.25
+  ------------------------------------------------------------------------
+  slack (MET)                                                3.53
+
+
+1

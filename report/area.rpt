@@ -1,0 +1,23 @@
+****************************************
+Report : area
+Design : surface_decoder_uf_grid
+Version: W-2024.09-SP2
+Date   : Thu Nov 12 09:42:06 2026
+****************************************
+
+Number of ports:                           42
+Number of nets:                           291
+Number of cells:                          249
+Number of combinational cells:            185
+Number of sequential cells:                64
+Number of macros/black boxes:               0
+Number of buf/inv:                         60
+Number of references:                      29
+
+Combinational area:                     60.87
+Buf/Inv area:                           17.05
+Noncombinational area:                  73.53
+Macro/Black Box area:                    0.00
+
+Total cell area:                       134.40
+1
